@@ -39,7 +39,7 @@ p,button,span{
 }
 /* Header starts */
 header {
-    background-image: linear-gradient(#fff, #5EC8F1);
+    background-image: linear-gradient(#fff, #6fcef5);
     z-index: 2;
     position: relative;
 }
@@ -147,7 +147,7 @@ header {
     content: '';
     width: 100%;
     height: 195px;
-    background: #5EC8F1;
+    background: #6fcef5;
     position: absolute;
     z-index: -1;
     top: 0;
@@ -461,4 +461,138 @@ footer ul{
 }
 .footer_widget .social li a:hover{
     background: #e14191;
+}
+
+/* Blog page starts */
+.blog_hero {
+    padding: 10px;
+}
+.who_we_are {
+    background-image: url(../images/wh_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 103px 0;
+    position: relative;
+}
+.who_we_are::before {
+    content: '';
+    width: 100%;
+    height: 180px;
+    background: #6fcef5;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
+.who_we_img {
+    text-align: center;
+    position: relative;
+}
+.who_we_img img {
+    width: 400px;
+}
+.who_we_img .seperator {
+    width: 1px;
+    height: 65%;
+    background: #fff;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.who_we_img .seperator::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.who_we_img .seperator::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Potencials clients */
+.potencial_clients {
+    padding: 60px 0;
+}
+.potencial_clients .span2 {
+    text-align: right;
+    display: block;
+}
+.potencial_text span {
+    color: #554dde;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'square',sans-serif !important;
+    line-height: 33px;
+}
+.potencial_text h2 {
+    color: #554dde;
+    font-size: 71px;
+}
+
+/* Our team starts */
+.team_section {
+    background-image: url(../images/team_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 140px 0;
+}
+.team_section .section_heading {
+    margin-bottom: 35px;
+}
+.team_section .section_heading span {
+    color: #fff;
+}
+.team_section .section_heading h2,
+.team_section .section_heading p {
+    color: #001b8d;
+}
+.team_section .section_heading p {
+    width: 48%;
+    margin: 0 auto;
+}
+.single_team {
+    text-align: center;
+}
+.single_team .photo img {
+    width: 190px;
+    margin: 0 auto;
+}
+.single_team .photo {
+    position: relative !important;
+}
+.single_team .photo .image_bg {
+    background: #5DC1ED;
+    width: 59%;
+    height: 81%;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 15px;
+}
+.single_team h6 {
+    color: #001b8d;
+    margin-top: 18px;
+    margin-bottom: 2px;
+}
+.single_team p {
+    color: #fff;
+    margin-bottom: 0;
 }
