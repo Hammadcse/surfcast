@@ -1,0 +1,260 @@
+.header_logo {
+    width: 115px;
+}
+.nav_toggler {
+    background: #001b8d;
+}
+.nav_toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+.navbar-toggler-icon {
+    background: #fff;
+    height: 3px;
+    border-radius: 100vh;
+    border: 0;
+    outline: 0;
+    position: relative;
+    margin-bottom: 2px;
+}
+.navbar-toggler-icon::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: -8px;
+    border-radius: 100vh;
+}
+.navbar-toggler-icon::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    border-radius: 100vh;
+}
+.offcanvas-start {
+    width: 75% !important;
+}
+ul.mobile_nav {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.mobile_nav .nav-link {
+    padding-left: 0 !important;
+    padding-bottom: 0px !important;
+}
+.offcanvas-body {
+    padding-top: 0 !important;
+}
+@media(min-width:1920px){
+    .hero_funfact::before {
+        width: 314px;
+        left: -313px;
+    }
+    .about_section {
+        height: 163vh;
+        padding: 390px 0;
+    }
+    .about_section::before {
+        height: 246px;
+    }
+    .frio {
+        height: 151vh;
+    }
+    .rates_section {
+        height: 138vh;
+        padding-top: 130px;
+    }
+    .contact {
+        height: 104vh;
+        padding-top: 230px;
+    }
+    .contact::after {
+        height: 333px;
+    }
+    .who_we_are {
+        padding: 257px 0;
+    }
+    .who_we_are::before {
+        height: 268px;
+        top: -3px;
+    }
+    .team_section {
+        padding: 345px 0;
+    }
+    .svg_shape {
+        padding: 100px 0;
+    }
+}
+@media(max-width:767px){
+    .navbar {
+        padding-top: 10px;
+    }
+    .hero_text {
+        padding-top: 0;
+    }
+    .hero_text h1 {
+        font-size: 36px;
+    }
+    .hero_text p br {
+        display: none;
+    }
+    .hero_funfact {
+        padding: 15px;
+        margin-top: 15px;
+    }
+    .hfn_item span {
+        font-size: 25px;
+    }
+    .hero_funfact::before {
+        left: -123px;
+    }
+    .hero_img {
+        margin-top: 50px;
+    }
+    .about_section {
+        padding: 192px 0;
+        padding-bottom: 78px;
+    }
+    .about_section .heading span {
+        font-size: 16px;
+    }
+    .about_section .heading span::after {
+        width: 290px;
+    }
+    .about_link {
+        margin-bottom: 55px;
+        flex-wrap: wrap;
+    }
+    .about_link a img {
+        width: 80px;
+        margin-right: 17px;
+        margin-bottom: 17px;
+    }
+    .about_img .seperator {
+        display: none;
+    }
+    .about_img img {
+        width: 250px;
+    }
+    .about_img {
+        margin-bottom: 48px;
+    }
+    .section_heading h2 {
+        font-size: 32px;
+    }
+    .section_heading p {
+        width: 100% !important;
+    }
+    .frio {
+        height: 39vh;
+        margin-top: -35px;
+    }
+    .rates_section .section_heading {
+        padding-top: 35px;
+    }
+    .rates_section {
+        height: auto;
+    }
+    .rate_item {
+        margin-bottom: 30px;
+    }
+    .contact {
+        margin-top: -50px;
+    }
+    .contact_img {
+        padding-top: 60px;
+        margin-bottom: 55px;
+    }
+    .footer_widget .logo {
+        width: 115px;
+        margin-bottom: 5px;
+    }
+    footer {
+        background: #BCE7F8;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    .contact {
+        padding-bottom: 85px;
+    }
+    .footer_widget {
+        margin-bottom: 15px;
+    }
+    .footer_widget h5 {
+        margin-bottom: 0;
+    }
+    .rates_section {
+        overflow: hidden;
+    }
+    .blog_hero {
+        padding: 0;
+    }
+    .who_we_are {
+        padding: 120px 0;
+        padding-bottom: 100px;
+    }
+    .who_we_img img {
+        width: 255px;
+    }
+    .who_we_img .seperator {
+        display: none;
+    }
+    .potencial_text h2 {
+        font-size: 39px;
+        margin: 7px 0;
+    }
+    .potencial_text span br {
+        display: none;
+    }
+    .potencial_text span {
+        font-size: 20px;
+    }
+    .potencial_clients {
+        padding: 40px 0;
+    }
+    .team_section {
+        padding: 140px 0;
+        padding-bottom: 80px;
+    }
+    .service_hero_text h1 {
+        font-size: 38px;
+    }
+    .service_hero_text p br {
+        display: none;
+    }
+    .search_box_wrap {
+        width: 100%;
+    }
+    .service_hero_text {
+        margin-bottom: 52px;
+    }
+    .single_team .photo .image_bg {
+        width: 73%;
+    }
+    .author_img img {
+        width: 285px;
+    }
+    .author_img .image_bg {
+        width: 99%;
+    }
+    .author_img img {
+        width: 265px;
+    }
+    .svg_shape {
+        padding: 25px 0;
+    }
+    section.author_section {
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+    .author_text {
+        padding-top: 40px;
+    }
+}

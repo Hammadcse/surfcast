@@ -1,3 +1,4 @@
+// Team slider
 $('.team_slider').owlCarousel({
     loop:true,
     margin:10,

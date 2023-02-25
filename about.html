@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfcast</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     <header class="hero">
@@ -18,7 +20,7 @@
                 <a class="navbar-brand" href="#">
                     <img class="header_logo" src="assets/images/logo.png" alt="logo">
                 </a>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-md-flex d-none">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex d-none">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                     </li>
@@ -36,7 +38,7 @@
                     </li>
                 </ul>
 
-                <a class="btn btn-primary d-md-none d-block ms-auto" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <a class="btn nav_toggler d-lg-none d-block ms-auto" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                     <span class="navbar-toggler-icon"></span>
                 </a>
 
@@ -74,7 +76,7 @@
     <section class="who_we_are">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div data-aos="fade-right" class="col-md-6">
                     <div class="section_heading text-end">
                         <span>WHO WE ARE</span>
                         <h2>NUESTRO <br>
@@ -87,7 +89,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div data-aos="fade-left" class="col-md-6">
                     <div class="who_we_img">
                         <div class="seperator"></div>
                         <img class="" src="assets/images/w1.png" alt="img">
@@ -103,13 +105,18 @@
                 <div class="col-sm-10 mx-auto">
                     <div class="potencial_text">
                         <div class="top">
-                            <span class="">
+                            <span data-aos="fade-right">
                                 DE FORMA AUTOMÁTICA Y POCO <br>
                                 INVASIVA, TE HACEMOS CONECTAR CON TUS
                             </span>
-                            <h2>POTENCIALES CLIENTES</h2>
+                            <h2 data-aos="zoom-in">POTENCIALES CLIENTES</h2>
                         </div>
-                        <span class="span2">
+                        <span data-aos="fade-left" class="span2 d-md-block d-none">
+                            EN LINKEDIN, ENTREGANDO UN <br>
+                            MENSAJE AUTOMATIZADO.
+                        </span>
+                        <!-- small device -->
+                        <span data-aos="zoom-in" class="span2 d-md-none d-block">
                             EN LINKEDIN, ENTREGANDO UN <br>
                             MENSAJE AUTOMATIZADO.
                         </span>
@@ -121,7 +128,7 @@
 
     <section class="team_section">
         <div class="container">
-            <div class="section_heading text-center">
+            <div data-aos="zoom-in" class="section_heading text-center">
                 <span>OUR TEAM</span>
                 <h2>NUESTRO EQUIPO</h2>
                 <p>
@@ -130,7 +137,7 @@
                 </p>
             </div>
             <div id="owl-carousel" class="owl-carousel owl-theme team_slider">
-                <div class="item">
+                <div data-aos="zoom-in" class="item">
                     <div class="single_team">
                         <div class="photo">
                             <div class="image_bg"></div>
@@ -141,7 +148,7 @@
                             la persona.</p>
                     </div>
                 </div>
-                <div class="item">
+                <div data-aos="zoom-in" class="item">
                     <div class="single_team">
                         <div class="photo">
                             <div class="image_bg"></div>
@@ -152,7 +159,7 @@
                             la persona.</p>
                     </div>
                 </div>
-                <div class="item">
+                <div data-aos="zoom-in" class="item">
                     <div class="single_team">
                         <div class="photo">
                             <div class="image_bg"></div>
@@ -163,7 +170,7 @@
                             la persona.</p>
                     </div>
                 </div>
-                <div class="item">
+                <div data-aos="zoom-in" class="item">
                     <div class="single_team">
                         <div class="photo">
                             <div class="image_bg"></div>
@@ -174,7 +181,7 @@
                             la persona.</p>
                     </div>
                 </div>
-                <div class="item">
+                <div data-aos="zoom-in" class="item">
                     <div class="single_team">
                         <div class="photo">
                             <div class="image_bg"></div>
@@ -224,12 +231,12 @@
                 <div class="col-md-3">
                     <div class="footer_widget">
                         <h5>INFO DE CONTACTO</h5>
-                        <ul class="mb-4">
+                        <ul class="mb-md-4 mb-3">
                             <li><a href="mailto:correo@gmail.com">correo@gmail.com</a></li>
                             <li><a href="tel:+51 996 587 138">
                                 +51 996 587 138</a></li>
                         </ul>
-                        <h5>SÍGUENOS</h5>
+                        <h5 class="mb-2">SÍGUENOS</h5>
                         <ul class="social">
                             <li>
                                 <a href="#">
@@ -253,6 +260,10 @@
         </div>
     </footer>
 
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

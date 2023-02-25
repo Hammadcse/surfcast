@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surfcast</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     <header class="hero">
@@ -16,7 +18,7 @@
                 <a class="navbar-brand" href="#">
                     <img class="header_logo" src="assets/images/logo.png" alt="logo">
                 </a>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-md-flex d-none">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex d-none">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                     </li>
@@ -34,7 +36,7 @@
                     </li>
                 </ul>
 
-                <a class="btn btn-primary d-md-none d-block ms-auto" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <a class="btn nav_toggler d-lg-none d-block ms-auto" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                     <span class="navbar-toggler-icon"></span>
                 </a>
 
@@ -68,8 +70,8 @@
         </nav>
         <div class="container hero_content">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="hero_text">
+                <div data-aos="fade-up" class="col-md-6">
+                    <div data-aos="zoom-in" class="hero_text">
                         <h1>
                             NEGOCIOS B2B </br>
                             A UN CLICK
@@ -79,30 +81,30 @@
                         </p>
                         <button class="primary_btn">Let’s surf</button>
                     </div>
-                    <div class="hero_funfact">
+                    <div data-aos="fade-right" class="hero_funfact">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-4">
                                 <div class="hfn_item">
-                                    <span>100K</span>
+                                    <span><span class="counter d-inline">100</span>K</span>
                                     <p>Leads generados</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-4">
                                 <div class="hfn_item">
-                                    <span>$28M+</span>
+                                    <span>$<span class="counter d-inline">28</span>M+</span>
                                     <p>Leads generados</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-4">
                                 <div class="hfn_item border-0">
-                                    <span>150M+</span>
+                                    <span><span class="counter d-inline">150</span>M+</span>
                                     <p>Leads generados</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div data-aos="fade-down" class="col-md-6">
                     <div class="hero_img text-center">
                         <img class="img-fluid" src="assets/images/hero.png" alt="hero_img">
                     </div>
@@ -113,11 +115,11 @@
 
     <section class="about_section">
         <div class="container">
-            <div class="heading">
+            <div data-aos="zoom-in" class="heading">
                 <span>LEADS CONNECTED</span>
             </div>
-            <div class="about_link">
-                <a href="#">
+            <div data-aos="zoom-in" class="about_link">
+                <a  href="#">
                     <img src="assets/images/a1.png" alt="brand_link">
                 </a>
                 <a href="#">
@@ -135,13 +137,28 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <div class="about_img">
+                    <div data-aos="fade-right" class="about_img">
                         <img class="" src="assets/images/about.png" alt="image">
                         <div class="seperator"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="about_text">
+                    <div data-aos="fade-left" class="about_text d-md-block d-none">
+                        <div class="section_heading about_heading">
+                            <span>ABOUT US</span>
+                            <h2>SOBRE </br>
+                                NOSOTROS</h2>
+                                <p>Texto que puede servir para poner un poco
+                                    de información del servicio. exto que puede servi
+                                    para poner un poco de información del servicio.
+                                    exto que puede servir para poner un poco
+                                    de información del servicio.
+                                </p>
+                                <button class="primary_btn">Saber más</button>
+                        </div>
+                    </div>
+                    <!-- mobile view -->
+                    <div data-aos="zoom-in" class="about_text d-md-none d-block">
                         <div class="section_heading about_heading">
                             <span>ABOUT US</span>
                             <h2>SOBRE </br>
@@ -162,7 +179,7 @@
 
     <section class="how_works">
         <div class="container">
-            <div class="section_heading text-center">
+            <div data-aos="zoom-in" class="section_heading text-center">
                 <span>HOW IT WORKS</span>
                 <h2>CÓMO FUNCIONA</h2>
                 <p>
@@ -172,7 +189,7 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="how_works_item">
+                    <div data-aos="zoom-in" class="how_works_item">
                         <div class="icon">
                             <span>01</span>
                             <img src="assets/images/f1.png" alt="icon">
@@ -183,7 +200,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="how_works_item">
+                    <div data-aos="zoom-in" class="how_works_item">
                         <div class="icon">
                             <span>02</span>
                             <img src="assets/images/f2.png" alt="icon">
@@ -194,7 +211,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="how_works_item">
+                    <div data-aos="zoom-in" class="how_works_item">
                         <div class="icon">
                             <span>03</span>
                             <img src="assets/images/f3.png" alt="icon">
@@ -205,7 +222,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="how_works_item">
+                    <div data-aos="zoom-in" class="how_works_item">
                         <div class="icon">
                             <span>04</span>
                             <img src="assets/images/f4.png" alt="icon">
@@ -225,7 +242,7 @@
 
     <section class="rates_section">
         <div class="container">
-            <div class="section_heading text-center">
+            <div data-aos="zoom-in" class="section_heading text-center">
                 <span>OUR RATES</span>
                 <h2>NUESTROS PLANES</h2>
                 <p>
@@ -235,7 +252,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="rate_item">
+                    <div data-aos="flip-left" class="rate_item">
                         <div class="head">
                             <h4>PLAN INICIAL</h4>
                         </div>
@@ -255,7 +272,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="rate_item">
+                    <div data-aos="flip-right" class="rate_item">
                         <div class="head">
                             <h4>PLAN AVANZADO</h4>
                         </div>
@@ -274,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div data-aos="flip-up" class="col-md-4">
                     <div class="rate_item">
                         <div class="head">
                             <h4>PLAN AGENCIA</h4>
@@ -302,11 +319,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="contact_img text-center">
+                    <div data-aos="zoom-in-right" class="contact_img text-center">
                         <img class="img-fluid" src="assets/images/contact.png" alt="image">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div data-aos="zoom-in-left" class="col-md-6 d-md-block d-none">
+                    <div class="section_heading text-center">
+                        <span>GET IN TOUCH</span>
+                        <h2 class="mb-4">HABLEMOS</h2>
+                    </div>
+                    <form action="" method="post">
+                        <div class="contact_form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name">
+                              </div>
+                              <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+                              </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+                              </div>
+                              <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your message" rows="3"></textarea>
+                              </div>
+                              <div class="primary_btn" type="submit">
+                                Enviar
+                              </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- small device -->
+                <div data-aos="zoom-in-up" class="col-md-6 d-md-none d-block">
                     <div class="section_heading text-center">
                         <span>GET IN TOUCH</span>
                         <h2 class="mb-4">HABLEMOS</h2>
@@ -370,12 +413,12 @@
                 <div class="col-md-3">
                     <div class="footer_widget">
                         <h5>INFO DE CONTACTO</h5>
-                        <ul class="mb-4">
+                        <ul class="mb-md-4 mb-3">
                             <li><a href="mailto:correo@gmail.com">correo@gmail.com</a></li>
                             <li><a href="tel:+51 996 587 138">
                                 +51 996 587 138</a></li>
                         </ul>
-                        <h5>SÍGUENOS</h5>
+                        <h5 class="mb-2">SÍGUENOS</h5>
                         <ul class="social">
                             <li>
                                 <a href="#">
@@ -399,6 +442,21 @@
         </div>
     </footer>
 
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function( $ ) {
+            $('.counter').counterUp({
+                delay: 5,
+                time: 1000
+            });
+        });
+  </script>
 </body>
 </html>
